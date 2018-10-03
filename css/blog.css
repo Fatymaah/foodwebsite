@@ -2,6 +2,9 @@ body{
 	background-color: #ccc;
 	box-sizing: border-box;
 }
+*{
+	box-sizing: border-box;
+}
 h3{
 	text-align: center;
 }
@@ -55,6 +58,7 @@ nav a:hover, nav li.active a{
 	clear: both;
 }
 .left-col{
+	max-width: 1000px;
 	background-color: #ccc;
 	width: 60%;
 	float: left;
@@ -88,11 +92,15 @@ footer{
 	border-radius: 50px;
 }
 /*media queries*/
-@media screeen and (max-width: 740px){
+@media screeen and (max-width: 768px){
 .left-col{
 		width: 100%;
+		height: auto;
+		
 	}
 .sidebar{
 		width: 100%;
+		height: auto;
 	}
+
 }
